@@ -10,7 +10,7 @@ const PrivRoute = ({ component: Component, ...rest }) => {
     if (localStorage.getItem("token")) {
       return <Component {...props} />;
     } else {
-      return <Redirect to="/login" />;
+      return <Redirect to="/" />;
     }
   }} />
 }
@@ -19,7 +19,7 @@ const privRoute = Component => props => {
   if (localStorage.getItem("token")) {
     return <Component {...props} />;
   } else {
-    return <Redirect to="/login" />;
+    return <Redirect to="/" />;
   }
 }
 
