@@ -57,7 +57,7 @@ export default withFormik({
         formikBag.props.history.push("/bubblepage");
       })
       .catch(error => {
-        console.log("Error: ", error.response)
+        console.log("Error: ", error.response.data)
       })
   }
 })(Login);
